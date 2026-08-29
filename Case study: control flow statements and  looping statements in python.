@@ -1,0 +1,78 @@
+CASE STUDY:
+BRANCHING STATEMENTS
+A college is selecting the Best All-Round Performer from a friendly cricket match.
+Each player is evaluated based on batting performance, bowling performance, and fielding impact.
+Students you all must use only branching statements (if–elif–else) to classify the player.
+No loops are allowed. Only decision making.
+SR=Runs/Balls*100
+ER=Runs conceded/Overs
+
+Aim:To classify a cricket player as the Best All-Round Performer based on batting, bowling, and fielding performance using branching statements.
+
+Algorithm:
+1.Start.
+2.Read the player's batting runs, wickets, and fielding points.
+3.Calculate the total performance score.
+4.Use if–elif–else statements to classify the player.
+5.Display the result.
+6.Stop.
+
+Program/Code:
+
+ob= int (input ("Enter overs boweled"))
+ct= int (input("Enter the catches taken"))
+bsr= (runs_scored/balls_faced) *100
+er=(rc/ob)
+print("Batting strike rate", bsr)
+print ("Economy rate",er)
+Batting performance
+if runs scored>=50 and bsr>=120:
+batter="Excellent"
+print ("Excellent batter")
+elif runs scored>=30 and bsr>=100: batter "Good"
+print("Good batter")
+elif runs scored>=20:
+batter "Average"
+print ("Average batter")
+else:
+batter "poor"
+print("poor batter")
+#Bowling performance
+if wt>=3 and er<=6:
+bowler="Excellent"
+print ("Excellent bowler")
+elif wt>=2 and er<-=8:
+bowler="Good"
+print ("Good bwler")
+elif wt>=1:
+bowler="Average"
+print("Averag bowler")
+else:
+bowler-"poor"
+print("poor bowler")
+#feilding performance
+if ct>=2:
+print("outstanding feilder")
+elif ct-1:
+print("Active feilder")
+else:
+print ("Needs improvement")
+#overall All rounder desicion
+if batter="excellent" and bowler=="Excellent"
+print("Star all-rounder")
+elif batter "Good" and bowler "Good":
+print("Strong all rounder")
+elif batter=="Good" or bowler=="Good": print("Supporting all rounder"
+else:
+print("Needs improvement")
+
+Output:
+Batting: 148 runs ≥ 50 and strike rate 296 ≥ 120 → Excellent
+Bowling: 4 wickets ≥ 3, but economy 14.5 is not ≤ 6 → first condition fails. Since 4 ≥ 2 but economy is also not ≤ 8 → second fails. 4 ≥ 1 → Average
+Fielding: 3 catches ≥ 2 → Outstanding
+Batting strike rate 296.0
+Economy rate 14.5
+Excellent batter
+Average bowler
+Outstanding fielder
+Needs improvement
