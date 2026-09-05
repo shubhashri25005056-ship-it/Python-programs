@@ -1,0 +1,41 @@
+AIM: To write a Python program to demonstrate various string operations such as finding the length, changing case, accessing characters,
+searching, slicing, replacing, checking substrings, concatenation, and trimming whitespace.
+
+ALGORITHM: 
+1.Start.
+2.Initialize a string "Hello Python".
+3.Perform basic string operations like length, case conversion, indexing, searching, slicing, replacing, and concatenation.
+4.Check for the presence of "Python" in the string.
+5.Remove extra spaces from another string using strip().
+6.Display all results.
+7.Stop.
+
+PROGRAM/CODE:
+s="Hello Python"
+print("Original String",s)
+print("Length", len(s))
+print("Uppercase", s.upper())
+print("Lowercase", s.lower())
+print("Character at index 6:",s [6])
+print("Position of Python:",s.find("Python"))
+print("Slice:",s [6])
+print("Replace:",s.replace("Python", "Universe"))
+print(s)
+print("Contains Python:", "Python"in s)
+print("Concatenation:",s+"Programming")
+s2="Hello world"
+print("Trim", s2.strip())
+
+OUTPUT:
+Original String Hello Python
+Length 12
+Uppercase HELLO PYTHON
+Lowercase hello python
+Character at index 6: P
+Position of Python: 6
+Slice: Python
+Replace: Hello Universe
+Hello Python
+Contains Python: True
+Concatenation: Hello PythonProgramming
+Trim Hello world
