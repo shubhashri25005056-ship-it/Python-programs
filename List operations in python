@@ -1,0 +1,49 @@
+Aim
+
+To write a Python program to demonstrate various list operations such as append, insert, remove, count, sort, reverse, copy, extend, 
+and finding maximum, minimum, and sum values.
+
+Algorithm
+
+1.Start.
+2.Create a list of numbers.
+3.Perform append, insert, remove, and count operations.
+4.Sort and reverse the list.
+5.Copy and extend the list.
+6.Find the maximum, minimum, and sum of elements.
+7.Display all results.
+8.Stop.
+
+PROGRAM/CODE:
+num-[50,20,30,10,40,20] 
+print("original list", num) 
+print ("Length of list", len (num)) num.append(60)
+print("After append (60)", num) num.insert (2,25)
+print("After insert (2,25)",num) num.remove (20)
+print("After removing (20)",num) print ("Count of 20", num.count(20)) 
+print("Indexnum.sort() 
+print("After sorting():",num)
+num.reverse() 
+print("After reverse():",num) 
+new list-num.copy()
+print("Copied list:", new_list)
+num.extend([70,80])
+print("After extend():", num) 
+print("MAximum Value:", max(num))
+print("Minimum value:", min (num))
+print("Sum of values:", sum (num))
+
+OUTPUT:
+Original list [50, 20, 30, 10, 40, 20]
+Length of list 6
+After append (60) [50, 20, 30, 10, 40, 20, 60]
+After insert (2,25) [50, 20, 25, 30, 10, 40, 20, 60]
+After removing (20) [50, 25, 30, 10, 40, 20, 60]
+Count of 20 1
+After sorting(): [10, 20, 25, 30, 40, 50, 60]
+After reverse(): [60, 50, 40, 30, 25, 20, 10]
+Copied list: [60, 50, 40, 30, 25, 20, 10]
+After extend(): [60, 50, 40, 30, 25, 20, 10, 70, 80]
+Maximum Value: 80
+Minimum value: 10
+Sum of values: 385
