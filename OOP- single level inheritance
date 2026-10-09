@@ -1,0 +1,19 @@
+#Single level inheritance
+class parent:
+    Asset1 = "3BHK house"
+    Asset2 = "Audi car"
+
+    def parentmtd(self):
+        print("This is the method from the parent class")
+        print("Asset1", self.Asset1)
+        print("Asset2", self.Asset2)
+class child(parent):
+    Asset3= "Toy house"
+    def childmtd(self):
+        print("Accessing the parent asset1",self.Asset1)
+        print("Accessing the parent asset2",self.Asset2)
+        print("This is the method froom child class")
+        print("Asset3 of child is",self.Asset3)
+obj=child()
+obj.parentmtd()
+obj.childmtd()
