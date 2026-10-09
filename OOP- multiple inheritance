@@ -1,0 +1,22 @@
+# Multiple Inheritance
+class Parent1:
+    Asset1 = "3BHK house"
+    Asset2 = "Audi car"
+    def parent1mtd(self):
+        print("This is the method from Parent1 class")
+        print("Asset1:", self.Asset1)
+class Parent2:
+    def parent2mtd(self):
+        print("This is the method from Parent2 class")
+        print("Asset2:", self.Asset2)
+class Child(Parent1, Parent2):
+    Asset3 = "Toy house"
+    def childmtd(self):
+        print("Accessing Parent1 asset:", self.Asset1)
+        print("Accessing Parent2 asset:", self.Asset2)
+        print("This is the method from Child class")
+        print("Asset3 of Child:", self.Asset3)
+obj = Child()
+obj.parent1mtd()
+obj.parent2mtd()
+obj.childmtd()
