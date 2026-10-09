@@ -1,0 +1,20 @@
+# Multilevel Inheritance
+class Grandparent:
+    Asset1 = "3BHK house"
+    def grandparentmtd(self):
+        print("This is the method from Grandparent class")
+        print("Asset1:", self.Asset1)
+class Parent(Grandparent):
+    Asset2 = "Audi car"
+    def parentmtd(self):
+        print("This is the method from Parent class")
+        print("Asset2:", self.Asset2)
+class Child(Parent):
+    Asset3 = "Toy house"
+    def childmtd(self):
+        print("This is the method from Child class")
+        print("Asset3:", self.Asset3)
+obj = Child()
+obj.grandparentmtd()
+obj.parentmtd()
+obj.childmtd()
