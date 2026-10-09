@@ -1,0 +1,10 @@
+class Inventory:
+    def __init__(self):
+        self.product_name = "Coffee Mug"
+        self.price = 350
+        self.qty = int(input("Enter number of mugs: "))
+    def totalprice(self):
+        total = self.qty * self.price
+        print("The total amount of the purchase is:", total)
+obj = Inventory()
+obj.totalprice()
