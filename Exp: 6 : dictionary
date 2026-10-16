@@ -1,0 +1,83 @@
+emp
+
+1
+
+"employee name": "Ravi",
+
+"Empid": 2314,
+
+"Dept": "CS&IT",
+
+"Salary": 50000
+
+print("The dictionary is", emp)
+
+print("The name of the dict feild:",emp)
+
+print("Empid:",emp|"Empid"]}
+
+print("Dept:",emp["Dept"])
+
+print("Salary:",emp["salary"])
+
+print(emp)
+
+emp["Hi regate"] "20.07.26"
+
+print("After adding")
+
+print(emp)
+
+emp"Dept "500"
+
+print("Arter updating")
+
+print(emp)
+
+del emp["Fmpid"]
+
+print ("After deleting")
+
+print(emp)
+
+print("Keys")
+
+print(ump.keys())
+
+print("value"
+
+print(emp.values())
+
+print("items")
+
+print(emp.items())
+
+print("Name:", emp.got ("employee name"))
+
+print " Hirédate:",emp.get("Hi redate", "NA"))
+
+emp.update("Empid": "3024", "Biridate": "30.05.2025"))
+
+print ("After update")
+
+Lext input("Enter string:")
+
+print (emp)
+
+Frequency0
+
+for ch in text:
+
+if ch in frequency:
+
+frequency[ch] frequency[ch]1
+
+else:
+
+frequency(chj1
+
+print ("character frequency")
+
+for ch, count in frequency.items():
+
+print (ch, ":", count)
