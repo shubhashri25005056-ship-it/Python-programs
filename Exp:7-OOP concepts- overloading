@@ -1,3 +1,32 @@
+Aim
+
+To write a Python program to demonstrate method overloading-like behavior by passing different types of arguments (integers, floating-point numbers, and strings) to the same method.
+
+Algorithm
+
+* Start the program.
+
+* Define a class named `addition`.
+
+* Define a method `add()` that accepts two arguments, `a` and `b`.
+
+* Print the message “Two arguments”.
+
+* Add the two arguments and print the result.
+
+* Create an object named `ovr` for the `addition` class.
+
+* Call the `add()` method with integers `8` and `5`.
+
+* Call the `add()` method with floating-point numbers `6.8` and `7.9`.
+
+* Call the `add()` method with strings `"hello"` and `"bca"`.
+
+* Observe the results and stop the program.
+
+Note: Python does not support traditional method overloading directly. This program demonstrates that the same method can work with different argument types.
+
+
 class addition:
 def add (self, a, b):
 print("Two arguments")
