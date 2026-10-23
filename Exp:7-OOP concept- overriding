@@ -1,0 +1,13 @@
+class parent:
+def a (self):
+print("Base class")
+class child(parent):
+def a (self):
+super().a()
+print("Derived class")
+obj=child()
+obj.a()
+
+OUTPUT:
+Base class
+Derived class
