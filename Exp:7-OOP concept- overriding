@@ -1,3 +1,31 @@
+Aim
+
+To write a Python program to demonstrate method overriding and the use of `super()` in inheritance, where the child class calls the parent class method and then executes its own method.
+
+Algorithm
+
+* Start the program.
+
+* Define a class named `parent`.
+
+* Define a method `a()` inside the parent class to print “Base class”.
+
+* Define a class named `child` that inherits from the `parent` class.
+
+* Override the method `a()` in the child class.
+
+* Use `super().a()` to call the parent class method.
+
+* Print “Derived class” from the child class method.
+
+* Create an object of the `child` class.
+
+* Call the method `a()` using the object.
+
+* Stop the program.
+
+ CODE
+
 class parent:
 def a (self):
 print("Base class")
