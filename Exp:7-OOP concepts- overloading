@@ -1,0 +1,14 @@
+class addition:
+def add (self, a, b):
+print("Two arguments")
+print(a+b)
+ovr=addition()
+ovr.add(8,5)
+ovr.add(6.8,7.9)
+ovr.add("hello", "bca")
+
+OUTPUT:
+Two arguments
+13
+Two argument14.7
+hellobca
