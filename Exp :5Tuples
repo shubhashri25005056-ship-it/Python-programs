@@ -1,3 +1,20 @@
+Aim
+To write a Python program to perform various operations on a tuple using built-in functions, indexing, and slicing.
+Algorithm
+Start the program.
+Create a tuple t = (10, 20, 30, 40).
+Display the original tuple.
+Find and display the length of the tuple using len().
+Find and display the maximum value using max().
+Find and display the minimum value using min().
+Calculate and display the sum using sum().
+Count the occurrences of 20 using count().
+Find the index of 30 using index().
+Display the element at index 0 using indexing.
+Display the tuple in reverse order using reverse slicing.
+Display the elements from index 1 to 3 using slicing.
+Stop the program.
+CODE:
 t = (10, 20, 30, 40)
 
 print("Original tuple:", t)
@@ -19,3 +36,15 @@ print("Element at index 0:", t[0])
 print("Tuple in reverse:", t[::-1])
 
 print("Tuple in slicing:", t[1:4])
+
+OUTPUT: 
+Original tuple: (10, 20, 30, 40)
+Length: 4
+Maximum value: 40
+Minimum value: 10
+Sum: 100
+Count of 20; 1
+Index of 30: 2
+Element at index 0: 10
+Tuple in reverse: (40, 30, 20, 10)
+Tuple in slicing: (20, 30, 40)
