@@ -1,0 +1,67 @@
+Aim
+To write a Python program using Matplotlib to create and display different types of graphs, such as bar chart, line chart, pie chart, scatter plot and histogram, for visualizing subject marks.
+
+Algorithm
+1. Start the program.
+2. Import the Matplotlib library.
+3. Create lists containing subject names and their marks.
+4. Create a bar chart using plt.bar().
+5. Add a title and axis labels, and display the bar chart.
+6. Create a line chart using plt.plot().
+7. Add a title and axis labels, and display the line chart.
+8. Create a pie chart using plt.pie().
+9. Display the pie chart with percentage labels.
+10. Create a scatter plot using plt.scatter().
+11. Add a title and axis labels, and display the scatter plot.
+12. Create a histogram using plt.hist().
+13. Add a title and axis labels, and display the histogram.
+14. Stop the program.
+
+code
+
+import matplotlib.pyplot as plt
+
+# Data
+subjects = ["Python", "Java", "DBMS", "OS"]
+marks = [90, 80, 85, 95]
+
+# 1. Bar Chart
+plt.figure()
+plt.bar(subjects, marks)
+plt.title("Bar Chart")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+plt.show()
+
+# 2. Line Chart
+plt.figure()
+plt.plot(subjects, marks, marker='o')
+plt.title("Line Chart")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+plt.show()
+
+# 3. Pie Chart
+plt.figure()
+plt.pie(marks, labels=subjects, autopct='%1.1f%%')
+plt.title("Pie Chart")
+plt.show()
+
+# 4. Scatter Plot
+plt.figure()
+plt.scatter(subjects, marks)
+plt.title("Scatter Plot")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+plt.show()
+
+# 5. Histogram
+plt.figure()
+plt.hist(marks, bins=4)
+plt.title("Histogram")
+plt.xlabel("Marks")
+plt.ylabel("Frequency")
+plt.show()
+
+output:
+graphs of the above
