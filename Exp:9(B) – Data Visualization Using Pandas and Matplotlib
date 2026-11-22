@@ -1,0 +1,45 @@
+Aim
+To write a Python program using Pandas to create a DataFrame containing student names and marks, and Matplotlib to represent the student marks using a bar chart.
+Algorithm
+1. Start the program.
+2. Import the Pandas and Matplotlib libraries.
+3. Create a dictionary containing student names and their marks.
+4. Convert the dictionary into a Pandas DataFrame.
+5. Display the student data.
+6. Create a bar chart using student names and marks.
+7. Add labels to the X-axis and Y-axis.
+8. Add a title to the graph.
+9. Display the bar chart using plt.show().
+10. Stop the program.
+
+Code:
+
+import pandas as pd
+import matplotlib.pyplot as plt
+# Creating data
+data = {
+    "Name": ["Siya", "Riya", "Priya", "Anu"],
+    "Marks": [90, 80, 95, 85]
+}
+df = pd.DataFrame(data)
+# Display DataFrame
+print("Student Data:")
+print(df)
+# Creating Bar Chart
+plt.bar(df["Name"], df["Marks"])
+# Adding labels and title
+plt.xlabel("Student Name")
+plt.ylabel("Marks")
+plt.title("Student Marks Analysis")
+# Display graph
+plt.show()
+
+Output:
+
+Student Data:
+    Name  Marks
+0   Siya     90
+1   Riya     80
+2  Priya     95
+3    Anu     85
+
