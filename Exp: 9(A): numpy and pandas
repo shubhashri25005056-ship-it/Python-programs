@@ -1,0 +1,64 @@
+Aim
+To write a Python program using NumPy and Pandas to perform basic mathematical operations on an array and display and analyse student data using a DataFrame.
+
+Algorithm
+1. Start the program.
+2. Import the NumPy and Pandas libraries.
+3. Create a NumPy array containing five elements.
+4. Display the array.
+5. Calculate and display the sum, mean, maximum and minimum values of the array.
+6. Create a dictionary containing student names, ages and marks.
+7. Convert the dictionary into a Pandas DataFrame.
+8. Display the DataFrame.
+9. Display the student names.
+10. Calculate and display the average marks.
+11. Stop the program.
+
+Code:
+
+import numpy as np
+import pandas as pd
+# NumPy implementation
+arr = np.array([10, 20, 30, 40, 50])
+print("NumPy Array:", arr)
+print("Sum:", np.sum(arr))
+print("Mean:", np.mean(arr))
+print("Maximum:", np.max(arr))
+print("Minimum:", np.min(arr))
+# Pandas implementation
+data = {
+    "Name": ["Siya", "Riya", "Priya"],
+    "Age": [20, 21, 19],
+    "Marks": [90, 85, 95]
+}
+df = pd.DataFrame(data)
+print("\nPandas DataFrame:")
+print(df)
+print("\nStudent Names:")
+print(df["Name"])
+print("\nAverage Marks:")
+print(df["Marks"].mean())
+
+Output:
+
+NumPy Array: [10 20 30 40 50]
+Sum: 150
+Mean: 30.0
+Maximum: 50
+Minimum: 10
+
+Pandas DataFrame:
+    Name  Age  Marks
+0   Siya   20     90
+1   Riya   21     85
+2  Priya   19     95
+
+Student Names:
+0     Siya
+1     Riya
+2    Priya
+Name: Name, dtype: object
+
+Average Marks:
+90.0
+
